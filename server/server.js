@@ -8,6 +8,8 @@ import { serve } from "inngest/express";
 import { inngest, ingestFunctions } from "./inngest/index.js";
 
 
+import showRouter from "./routes/showRoutes.js";
+
 const app = express();
 
 const PORT = process.env.PORT || 3000;
@@ -22,16 +24,19 @@ app.use(clerkMiddleware());
 
 // Inngest Endpoint
 app.use(
-  "/api/ingest",
+  "/api/inngest",
   serve({
     client: inngest,
     functions: ingestFunctions,
   })
 );
 
+// 👇 Add this route
+app.use("/api/show", showRouter);
+
 // Test Route
 app.get("/", (req, res) => {
-  res.send("Server is Live rajlakshmi ");
+  res.send("Server is Live rajlakshmi");
 });
 
 // Start Server
