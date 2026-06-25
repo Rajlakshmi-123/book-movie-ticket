@@ -9,7 +9,7 @@ const AdminNavbar = () => {
         <img src={assets.logo} alt='Admin Logo' className='w-10' />
         <div>
           <p className='text-lg font-semibold'>Admin Portal</p>
-          <p className='text-xs text-gray-500'>Manage shows and bookings</p>
+          <p className='text-xs text-gray-500'>Manage shows and bookings !! </p>
         </div>
       </Link>
       <div className='rounded-2xl border border-white/10 bg-black px-4 py-2 text-sm text-gray-300'>Admin</div>
