@@ -34,6 +34,7 @@ const Navbar = () => {
         <Link to="/movies" onClick={handleLinkClick} className='text-white hover:text-primary transition-colors'>Movies</Link>
         <Link to="/theaters" onClick={handleLinkClick} className='text-white hover:text-primary transition-colors'>Theaters</Link>
         <Link to="/releases" onClick={handleLinkClick} className='text-white hover:text-primary transition-colors'>Releases</Link>
+         <Link to="/favorites" onClick={handleLinkClick} className='text-white hover:text-primary transition-colors'>Favorites</Link>
       </div>
 
       {/* Action Bar: Search, Login/Profile, and Mobile Toggle [2, 11, 12] */}
